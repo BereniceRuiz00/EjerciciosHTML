@@ -22,14 +22,191 @@
     <!---Primer párrafo-->
     <p style= "color:blueviolet" align= "center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque beatae pariatur error sapiente excepturi asperiores magnam eveniet, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
     
+    <hr>
+
     <!---Segundo párrafo-->
-    <p align ="left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque beatae pariatur error sapiente excepturi asperiores magnam eveniet, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
+    <blockquote><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque beatae pariatur error sapiente excepturi asperiores magnam eveniet, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p></blockquote>
     
+   <hr> 
+
     <!---Tercero párrafo-->
-    <p align ="right"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque beatae pariatur error sapiente excepturi asperiores magnam eveniet, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
+    <p align ="right"> <i><em>Lorem, ipsum dolor.</em></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque beatae pariatur error sapiente excepturi asperiores magnam eveniet, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
+    
+    <hr>
+
+    <!--Anidación-->
+    <p>
+        <u>
+            <i>
+                
+            </i>
+        </u>
+    </p>
+
+    <hr> 
    
    <!---Cuarto párrafo-->
-    <p align ="justify"> <b>psum dolor sit amet consectetur adipisicing elit. Quas neque beatae</b> <u> pariatur error sapiente excepturi asperiores magnam evenie</u>it, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
+    <p align ="justify"> <b> <strong>Lorem ipsum dolor sit amet.</strong>psum dolor sit amet consectetur adipisicing elit. Quas neque beatae</b> <u> pariatur error sapiente excepturi asperiores magnam evenie</u>it, atque ipsum laborum enim corrupti, ipsam, earum aliquid qui aut obcaecati vitae.</p>
+
+    <!--Etiquetas divisorias y separadoses hr y br
+    
+        Estas no necesitan etiquetas de cierre
+        hr -- lineas horizontales
+        br -- Salto de parrafo 
+    -->
+
+  <!--Etiquetas de enlace <a> </a>
+
+    Los enlaces permiten la navegación por medio de hipervinvulos o links que van a realizar la conexión y referencias a otros archivos o páginas web de la misma aplicación o de manera externa. 
+
+    href: atributo que permite definir la ubicación de una página ("URL o ubicacion dentro de assets").
+
+    target: atributo que permite definir la ventana de destino
+        - _blank -- nueva ventana
+        - _self -- abrir en la misma ventana (atributo por defecto)
+   -->  
+<a href="assets/perritoplayero.jpg" target="_blank">¡Perrito Playero, Dale click! </a>
+<br><br>
+<a href="https://www.google.com" target="_blank">Buscador Google</a>
+
+<!--Otros enlaces
+
+    -correo: mailto
+    -descarga: dentro de href se escribe la dirección de la pagina o archivo y el valor download.
+-->
+
+<br> <br>
+
+<a href="mailto:ruizsilviabere@hotmail.com">Enviame un correo</a>
+
+<br> <br>
+
+<a href="assets/perritoplayero.jpg" download="Perritoplayero"
+>Descarga un perrito playero</a>
+
+<!--Etiquetas de listas ul, ol, dl
+ 
+    Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+    Los tipos de listas que tenemos en HTMl son:
+
+    - Listas ordenadas: Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numeros, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol.
+
+    Atibutos de listas ordenadas:
+
+        - start para definir el orden inicial, por defecto es 1
+        - type pra indicar el tipo de lista que se va a crear
+            - decimal para numeros enteros (1)
+            - lower-alpha para letras minusculas (A)
+            - lower -roman para letras minusculas en romano (i)
+            - upper-alpha para letras mayusculas (I)
+            - upper-roman para mayuscas en romano 
+        - reversed: para invertir el orden de los elementos
+
+    -Listas desordenadas: son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+
+    Atributos de listas desordenadas:
+        - style para definir el estilo de la lista
+            - circle
+            - disc
+            - square
+
+    - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+
+-->
+
+<h3>Listas ordenadas</h3>
+
+<ol> <!--Order List-->
+    <li>Dalmata</li>  <!--List Item-->
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>Pitbull</li>
+</ol>
+
+<ol type="A" start="8"> <!--lista con atributos-->
+    <li>Dalmata</li>  
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>Pitbull</li>
+</ol>
+
+<ol start="8" reversed> <!--lista con atributos-->
+    <li>Dalmata</li>  
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>Pitbull</li>
+</ol>
+
+<h3>Listas desordenadas</h3>
+
+<ul> <!--Unorder List--> 
+    <li>Dalmata</li> 
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>Pitbull</li>
+</ul>
+
+<ul type="square"> <!--lista con atributos-->
+    <li>Dalmata</li> 
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>Pitbull</li>
+</ul>
+
+<h3>Lista de definiciones</h3>
+
+<dl> <!--definition list-->
+    <dt>Gato</dt> <!--definition term!-->
+    <dd>Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico, de unos cinco decímetros de largo desde la cabeza hasta el arranque de la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera que planean dominar al mundo</dd>
+    <dt>Perro</dt>
+    <dd>Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño. Es el mejor amigo del hombre</dd>
+</dl>
+
+
+<!--Etiqueta de imagen (img)
+    
+    La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+    Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/
+
+    Los atributos de la etiqueta img son:
+
+    - src: es el atributo que nos permite definir la ubicación de la imagen.
+    - alt: es el atributo que nos permite definir una descripción de la imagen.
+    - width: es el atributo que nos permite definir el ancho de la imagen.
+    - height: es el atributo que nos permite definir el alto de la imagen.
+-->
+
+<img src="assets/perritoplayero.jpg" alt="Imagen de un perrito playero" height="120px" width="120px">
+
+<!--Etiquetas de divisiones (div y span)
+
+     Las etiquetas div y span no tienen ningun signidicado especial, sólo que la etqueta div se define como un elemento bloque y la etiqueta span es un elemento de linea.
+
+    -div: Este es un bloque de texto, se utiliza pra agrupar elementos en una sola seccion, es decir, si queremos agrupar una imagen y un texto, debemos utilizar un div.
+-->
+
+<!--Bloque 1-->
+<div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+    <img src="assets/perritoplayero.jpg" alt="Perrito Playero" width="200" height="200">
+    <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+    <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+    <ul>
+        <li> Un elemento de lista centrado </li>
+        <li> Otro elemento de lista centrado </li>
+    </ul>
+</div>
+<!--Fin de bloque 1-->
+
+<!--Bloque 2-->
+<div align="center" style="border: 10px dotted blue;">
+    <h3 >Ejemplo de div y span </h3>
+    <p> Esto es un párrafo dentro de un div,
+    <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+    </p>
+</div>
+<!--Fin de bloque 2-->
 
 </body>
 <!--Termina cuerpo-->
